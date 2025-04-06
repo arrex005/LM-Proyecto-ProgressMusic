@@ -5,12 +5,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module'; 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        MainComponent
     ],
     exports: [
         NavbarComponent
