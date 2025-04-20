@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img [src]="producto?.imagen" class="img-fluid" alt="{{ producto?.nombre }}">
+      </div>
+      <div class="col-md-6">
+        <h2>{{ producto?.nombre }}</h2>
+        <p>{{ producto?.descripcion }}</p>
+        <p class="text-success fw-bold">$ {{ producto?.precio }}</p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+        <button class="btn btn-secondary mt-2" (click)="volver()">Volver al catálogo</button>
+      </div>
+    </div>
+  </div>

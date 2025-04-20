@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module'; 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MainComponent } from './main/main.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { MainComponent } from './main/main.component';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
