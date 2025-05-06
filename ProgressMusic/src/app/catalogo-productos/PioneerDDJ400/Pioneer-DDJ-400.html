@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comprar Pioneer DDJ-400</title>
-  <link rel="stylesheet" href="PioneerDDJ400.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - DJ TECH</title>
+    <link rel="stylesheet" href="PioneerDDJ400.css">
 </head>
 <body>
-  <header>
-    <h1>Comprar Pioneer DDJ-400</h1>
-  </header>
-  <main>
-    <img src="/ProgressMusic/img/546ed472038b0cfa43ea2146604767c4ea4acab0.jpg" alt="Pioneer DDJ-400">
-    <p>Precio: $299.00</p>
-    <p>Descripción: Controlador DJ ideal para principiantes y profesionales.</p>
-    <button class="btn">Añadir al Carrito</button>
-  </main>
-  <footer>
-    <p>© 2025 ProgressMusic. Todos los derechos reservados.</p>
-  </footer>
+
+<div class="container">
+    <!-- Información del Producto -->
+    <div class="product">
+        <img src="/ProgressMusic/img/546ed472038b0cfa43ea2146604767c4ea4acab0.jpg" alt="Pioneer DJ DDJ-400">
+        <div class="details">
+            <h2>Pioneer DJ DDJ-400</h2>
+            <p>Controladora DJ compacta ideal para principiantes y DJs móviles. Compatible con múltiples aplicaciones y software de DJ.</p>
+            <p class="price">250.00€</p>
+            <div class="quantity">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" value="1" min="1" max="10" onchange="actualizarTotal()">
+            </div>
+            <div class="buy-button" onclick="agregarAlCarrito()">Añadir al Carrito</div>
+        </div>
+    </div>
+
+    <!-- Formulario de Compra -->
+    <div class="form-section">
+        <h2>Información de Compra</h2>
+        <form id="compraForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required>
+
+            <label for="direccion">Dirección de Envío:</label>
+            <input type="text" id="direccion" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" required>
+
+            <label for="metodo-pago">Método de Pago:</label>
+            <select id="metodo-pago" required>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+        </form>
+    </div>
+
+    <!-- Resumen de Compra -->
+    <div class="summary">
+        <h2>Resumen de Compra</h2>
+        <p><strong>Producto:</strong> Pioneer DJ DDJ-400</p>
+        <p><strong>Cantidad:</strong> <span id="resumen-cantidad">1</span></p>
+        <p><strong>Precio Unitario:</strong> 250.00€</p>
+        <p class="total">Total: <span id="total-precio">250.00€</span></p>
+    </div>
+
+    <!-- Botón de Pagar -->
+    <button class="checkout-button" onclick="procesarPago()">Finalizar Compra</button>
+</div>
+
+<script>
+    function actualizarTotal() {
+        let cantidad = document.getElementById("cantidad").value;
+        let precioUnitario = 250.00;
+        let total = cantidad * precioUnitario;
+        document.getElementById("total-precio").innerText = total.toFixed(2) + "€";
+        document.getElementById("resumen-cantidad").innerText = cantidad;
+    }
+
+    function agregarAlCarrito() {
+        alert("Producto añadido al carrito.");
+    }
+
+    function procesarPago() {
+        alert("¡Compra realizada con éxito!");
+    }
+</script>
+
 </body>
 </html>
