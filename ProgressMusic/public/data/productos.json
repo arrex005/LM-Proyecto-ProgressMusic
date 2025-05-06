@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "nombre": "Controlador DJ Pioneer DDJ-400",
+      "descripcion": "Controlador DJ de 2 canales con Rekordbox.",
+      "precio": 299.00,
+      "imagen": "assets/images/ddj-400.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Auriculares Audio-Technica ATH-M50X",
+      "descripcion": "Auriculares profesionales para monitoreo.",
+      "precio": 149.00,
+      "imagen": "assets/images/ath-m50x.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Altavoces KRK Classic 5",
+      "descripcion": "Monitores de estudio activos de 5 pulgadas.",
+      "precio": 289.00,
+      "imagen": "assets/images/krk-classic-5.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Teclado MIDI Akai MPK Mini",
+      "descripcion": "Controlador MIDI compacto con pads y knobs.",
+      "precio": 119.00,
+      "imagen": "assets/images/akai-mpk-mini.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Micrófono Shure SM58",
+      "descripcion": "Micrófono dinámico para vocalistas.",
+      "precio": 99.00,
+      "imagen": "assets/images/shure-sm58.jpg"
+    }
+  ]
